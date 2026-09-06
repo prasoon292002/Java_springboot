@@ -10,14 +10,6 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-<<<<<<< HEAD
-                .allowedOrigins("*")
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*")
-                .exposedHeaders("*");
-    }
-}
-=======
                 .allowedOrigins(
                         "http://localhost:5173",
                         "https://java-frontend-nlzyykce7-personal-f6c7.vercel.app"
@@ -32,4 +24,3 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedHeaders("*");
     }
 }
->>>>>>> 0231da2
